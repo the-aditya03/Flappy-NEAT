@@ -1,6 +1,7 @@
 # Flappy_NEAT
 An interactive and AI-powered version of Flappy Bird built with **Pygame** and **NEAT (NeuroEvolution of Augmenting Topologies)**.  
 
+---
 
 ## Features
 
@@ -10,6 +11,7 @@ This project lets you:
 - **Training Visualization** – Watch the entire population attempt the game  
 - **Best AI Playback** – Replay the top-performing bird after training  
 
+---
 
 ## Tech Stack
 
@@ -18,8 +20,10 @@ This project lets you:
 - [NEAT-Python](https://github.com/CodeReclaimers/neat-python) for neuroevolution
 - Numpy for vector computations
 
+---
 
 ## Installation
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/the-aditya03/Flappy-NEAT.git
@@ -45,6 +49,7 @@ This project lets you:
     pip install -r requirements.txt
     ```
 
+---
 
 ## Usage
 
@@ -61,6 +66,7 @@ This project lets you:
     - `WatchTraining` - Visually watch the NEAT training process (slower).
     - `WatchBest` - Watch the best saved AI genome in action.
 
+---
 
 ## Configuration
 
@@ -82,6 +88,7 @@ p.run(eval_genomes, 50)     # change 50 to set number of generations during trai
 p.run(lambda genomes, config: eval_genomes(genomes, config, render=True), 15)  # change 15 for WatchTraining generations
 ```
 
+---
 
 ## How It Works
 
@@ -93,6 +100,7 @@ p.run(lambda genomes, config: eval_genomes(genomes, config, render=True), 15)  #
 - Bird jump is triggered when the neural network output crosses a threshold.
 - Fitness rewards survival time and passing pipes; penalties apply on collisions.
 
+---
 
 ## Training Details
 
@@ -101,6 +109,7 @@ p.run(lambda genomes, config: eval_genomes(genomes, config, render=True), 15)  #
 - Saves the highest scoring genome after each generation or when a new high score is reached.
 - Adjustable parameters in `config-feedforward.txt`.
 
+---
 
 ## Contributing
 
@@ -112,11 +121,13 @@ Contributions, issues, and feature requests are welcome!
 4. Push to the branch (`git push origin feature/my-feature`).
 5. Open a Pull Request.
 
+---
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
+---
 
 ## Acknowledgments
 
@@ -125,7 +136,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Inspiration from Tim's NEAT Flappy Bird tutorial  
 - Open source contributors and the Flappy Bird AI community
 
-
-*Happy evolving and flapping!*  
+---
+*✨ Happy evolving and flapping!*  
 
 
