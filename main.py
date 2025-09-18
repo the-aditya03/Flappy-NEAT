@@ -354,8 +354,7 @@ def run_human_game(game_instance, screen, clock, font, small_font):
         pygame.display.flip()
 
         if game_instance.score > 1 and game_instance.score % 10 == 0:
-            game_config.FPS += 0.2
-            game_config.PIPE_GAP -= 10
+            game_config.FPS += 0.5
 
 def main(mode="Play"):
     pygame.init()
