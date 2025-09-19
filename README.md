@@ -34,13 +34,13 @@ This project lets you:
 
     for Linux/Mac
     ```bash
-    python -m venv venv
+    python3 -m venv venv
     source venv/bin/activate
     ```
 
     for Windows
     ```bash
-    python -m venv venv
+    python3 -m venv venv
     venv\Scripts\activate
     ```
 
