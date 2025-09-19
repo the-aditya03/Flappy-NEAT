@@ -209,10 +209,10 @@ def run_neat(config_file):
     try:
         from neat.parallel import ParallelEvaluator
         pe = ParallelEvaluator(4, eval_genome)
-        winner = p.run(pe.evaluate, 50)
+        winner = p.run(pe.evaluate, 15)
     except Exception:
         print("Parallel evaluation unavailable, using serial evaluation.")
-        winner = p.run(lambda g, c: eval_genomes(g, c, render=False), 50)
+        winner = p.run(lambda g, c: eval_genomes(g, c, render=False), 15)
     return winner
 
 def playback_neat_best(screen, clock, font):

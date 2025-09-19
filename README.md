@@ -84,7 +84,7 @@ To customize these parameters, edit the following lines in `main.py`:
 
 ```python
 MAX_FRAMES_PER_GEN = 10000  # adjust max frames per generation
-p.run(eval_genomes, 50)     # change 50 to set number of generations during training
+p.run(eval_genomes, 15)     # change 15 to set number of generations during training
 p.run(lambda genomes, config: eval_genomes(genomes, config, render=True), 15)  # change 15 for WatchTraining generations
 ```
 
